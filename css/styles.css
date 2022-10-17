@@ -119,8 +119,10 @@ ul {
   margin-left: 50px;
 }
 .contact {
+  display: flex;
+  align-items: center;
   padding: 20px 0;
-  display: inline-blockflex;
+  display: flex;
   align-items: center;
 
   color: var(--alt-color);
@@ -235,7 +237,7 @@ ul {
   width: 270px;
   min-height: 120px;
   /* padding: 25px 0 25px; */
-  /* margin-bottom: 30px; */
+  margin-bottom: 30px;
   background-color: var(--add-back-color);
 }
 
@@ -251,7 +253,7 @@ ul {
 
 .advantages-head {
   display: block;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -323,7 +325,7 @@ img {
   display: block;
   margin-top: 0;
   margin-bottom: 16px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -375,27 +377,35 @@ img {
 .client-item {
   /* padding: 16px 32px; */
   /* width: 170px; */
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
+  /* border: 1px solid #afb1b8; */
+  /* border-radius: 4px; */
 }
 .client-item:hover,
 .client-item:focus {
-  border: 1px solid var(--focus-color);
-  cursor: pointer;
+  /* border: 1px solid var(--focus-color); */
+  /* cursor: pointer; */
 }
 
 .client-icon {
   fill: #afb1b8;
 }
 .client-link {
-  display: block;
-  padding: 16px 32px;
-  width: 170px;
+  display: flex;
   align-self: center;
+  align-items: center;
+  justify-content: center;
+
+  /* padding: 16px 32px; */
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 .client-link:hover,
 .client-link:focus {
   color: var(--focus-color);
+  border: 1px solid var(--focus-color);
+  cursor: pointer;
 }
 
 .client-link:hover .client-icon,
@@ -463,8 +473,16 @@ img {
   /* margin-top: 12px; */
   margin-left: 70px;
 }
+.footer-net-title {
+  display: block;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  padding-bottom: 27px;
+}
 .footer-net-list {
-  padding-top: 27px;
   display: flex;
 
   justify-content: center;
@@ -484,8 +502,7 @@ img {
 .footer-net-link:focus {
   background-color: var(--focus-color);
 }
-/* .footer-net-link:hover .footer-net-icon,
-.footer-net-link:focus  */
+
 .footer-net-icon {
   fill: currentColor;
 }
